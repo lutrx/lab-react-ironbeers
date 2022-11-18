@@ -4,6 +4,7 @@ import Home from './components/Home';
 import AllBeers from './components/AllBeers';
 import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
+import OneBeer from './components/OneBeer';
 import {useEffect, useState} from 'react';
 
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/beers' element={<AllBeers />} />
+        <Route path='/beers/:id' element={<OneBeer />} />
         <Route path='/random-beer' element={<RandomBeer />} />
         <Route path='/new-beer' element={<NewBeer />} />
       </Routes>
