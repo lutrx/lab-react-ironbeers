@@ -43,30 +43,30 @@ function NewBeer() {
         <header className="Header">
             <Link to={'/'}>Home</Link>
         </header>
-        <div className="new-beer">
-            <form onSubmit={handleSubmit}>
+        <div>
+            <form onSubmit={handleSubmit} className="new-beer">
                 <label>
-                    Name <input value={name} type='text' onChange={event => setName(event.target.value)} />
+                    Name <input className="input-field" value={name} type='text' onChange={event => setName(event.target.value)} />
                 </label>
                 <label>
-                    Tagline <input value={tagline} type='text' onChange={event => setTagline(event.target.value)} />
+                    Tagline <input className="input-field" value={tagline} type='text' onChange={event => setTagline(event.target.value)} />
                 </label>
                 <label>
-                    Description <input value={description} type='text' onChange={event => setDescription(event.target.value)} />
+                    Description <input className="input-field" value={description} type='text' onChange={event => setDescription(event.target.value)} />
                 </label>
                 <label>
-                    First Brewed <input value={first_brewed} type='text' onChange={event => setFirst_brewed(event.target.value)} />
+                    First Brewed <input className="input-field" value={first_brewed} type='text' onChange={event => setFirst_brewed(event.target.value)} />
                 </label>
                 <label>
-                    Brewers Tips <input value={brewers_tips} type='text' onChange={event => setBrewers_tips(event.target.value)} />
+                    Brewers Tips <input className="input-field" value={brewers_tips} type='text' onChange={event => setBrewers_tips(event.target.value)} />
                 </label>
                 <label>
-                    Attenuation Level <input value={attenuation_level} type='number' onChange={event => setAttenuation_level(event.target.value)} />
+                    Attenuation Level <input className="input-field" value={attenuation_level} type='number' onChange={event => setAttenuation_level(event.target.value)} />
                 </label>
                 <label>
-                    Contributed by <input value={contributed_by} type='text' onChange={event => setContributed_by(event.target.value)} />
+                    Contributed by <input className="input-field" value={contributed_by} type='text' onChange={event => setContributed_by(event.target.value)} />
                 </label>
-                <button type="submit">ADD NEW</button>
+                <button type="submit" className="btn-create">ADD NEW</button>
             </form>
         </div>
         </>
