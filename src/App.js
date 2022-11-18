@@ -6,6 +6,7 @@ import RandomBeer from './components/RandomBeer';
 import NewBeer from './components/NewBeer';
 import OneBeer from './components/OneBeer';
 import {useEffect, useState} from 'react';
+import React from 'react'
 
 
 function App() {
